@@ -43,7 +43,7 @@ To be updated..
 - [ ] Write unit tests
 - [ ] Write documentation, generate using Sphinx
 
-# License
+## License
 
 This project is licensed under MIT. See [LICENSE.md](./LICENSE.md) for full license.
 
