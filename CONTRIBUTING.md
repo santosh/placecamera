@@ -11,4 +11,4 @@ To be updated..
 
 ## Coding Style and Conventions
 
-Follow PEP8, most importantly, indent by 4 space and use semicolons. Just kidding. :wink:
+Follow PEP8, and most importantly, indent by 4 space and use semicolons. Just kidding. :wink:

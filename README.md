@@ -26,10 +26,13 @@ If you are a developer, there are a lot work to be done. See [Design](#Design) s
 
 ## Development
 
-If you are developing locally, follow these instruction.
+Make a virtual environment and install the requirements.
 
-To be updated..
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
 
+The most important dependencies are `pillow` and `Django`.
 ### Design
 
 - [ ] Produce square image if only one param is passed
@@ -40,7 +43,7 @@ To be updated..
 
 ### TODOs
 
-- [ ] Write unit tests
+- [ ] Write unit tests (for Django? and PIL?)
 - [ ] Write documentation, generate using Sphinx
 
 ## License
