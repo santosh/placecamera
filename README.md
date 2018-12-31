@@ -32,11 +32,12 @@ Make a virtual environment and install the requirements.
     source .venv/bin/activate
     pip install -r requirements.txt
 
-The most important dependencies are `pillow` and `Django`.
+The most important dependencies are `pillow` and `Django`. Second most important dependencies include `autopep8` for code formatting and `pylint` for code linting.
+
 ### Design
 
-- [ ] Produce square image if only one param is passed
-- [ ] If two params are passed take first as width, other as height
+- [x] Produce square image if only one param is passed
+- [x] If two params are passed take first as width, other as height
 <!-- - [ ] Use PNG (do we need others?) -->
 <!-- - [ ] Add support for text | really? on camera? -->
 - [ ] Add support for BG and FG color
