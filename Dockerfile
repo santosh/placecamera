@@ -1,5 +1,5 @@
 # Use an existing docker image as a base
-FROM python:3.6
+FROM python:3.7-alpine
 
 # Download and install a dependency
 ## Don't litter /
