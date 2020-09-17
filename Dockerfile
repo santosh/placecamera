@@ -1,16 +1,19 @@
 # Use an existing docker image as a base
-FROM python:3.7-alpine
+FROM python:3.7-alpine AS builder
 
 # Download and install a dependency
 ## Don't litter /
 WORKDIR /app
 
 ## Only copy requirements.txt
-COPY ./requirements.txt ./
 ## So that cache till the installation is preserved
+COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
-## And the changes we make any project file only copies those files,
-## not the dependencies
+
+FROM python:3.8-alpine
+
+COPY --from=builder /root/.local/bin /root/.local
+
 COPY ./ ./
 
 # This is for inter-container communication
@@ -18,4 +21,3 @@ COPY ./ ./
 
 # Tell the image what to do when it starts as a container
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
-
